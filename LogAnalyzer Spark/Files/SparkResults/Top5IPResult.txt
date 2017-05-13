@@ -1,0 +1,5 @@
+(64.242.88.10,452)
+(10.0.0.153,270)
+(h24-71-236-129.ca.shawcable.net,51)
+(cr020r01-3.sac.overture.com,44)
+(h24-70-69-74.ca.shawcable.net,32)
