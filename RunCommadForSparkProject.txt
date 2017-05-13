@@ -1,0 +1,17 @@
+
+Spark Project : >>>Run command Step By step
+
+Copy file to hadoop system:
+
+Hadoop fs -mkdir /user/cloudera/input/raushan/
+Hadoop fs -put mahaseth.txt /user/cloudera/input/mahaseth/
+Hadoop fs -mkdir /user/cloudera/output/raushan/
+
+To run on Spark 
+
+spark-submit --class WordCount \
+> --master local --deploy-mode client --executor-memory 1g \
+> --name wordcount --conf "spark.app.id=wordcount" \
+> wordcount-0.0.1-SNAPSHOT.jar hdfs://localhost:8020/user/cloudera/input/mahaseth/raushan.txt 2
+
+ 
